@@ -8,23 +8,25 @@ function printDetails(name, age) {
 }
 printDetails("saurabh", 22);
 class Product {
-    constructor() {
-        this.name = "";
-        this.price = 0;
+    constructor(name, price) {
+        this.name = name;
+        this.price = price;
     }
     printDetails() {
         console.log(`${this.name} and ${this.price}`);
     }
 }
-let product = new Product();
-product.name = "samsung M51";
-product.price = 20000;
-product.printDetails();
-let product1 = new Product();
-product1.name = "nokia M51";
-product1.price = 10000;
+let product1 = new Product("Nokia 5233", 2522);
 product1.printDetails();
-let product2 = new Product();
-product2.name = "i phone";
-product2.price = 50000;
-product2.printDetails();
+class student {
+    constructor(name, roll, address) {
+        this.name = name;
+        this.roll = roll;
+        this.address = address;
+    }
+    doingTask() {
+        console.log(`${this.name} ${this.roll} ${this.address}`);
+    }
+}
+let myStudent = new student("rahul", 12, "delhi");
+myStudent.doingTask();
